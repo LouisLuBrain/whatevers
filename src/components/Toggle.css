@@ -12,6 +12,7 @@
   border-radius: 9999px;
   border: 0.25rem solid #DFDFDD;
   transition: all 200ms ease-in-out;
+  box-sizing: content-box;
 }
 .toggle::before {
   cursor: pointer;
