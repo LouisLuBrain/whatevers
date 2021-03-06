@@ -1,12 +1,17 @@
 import React from 'react';
 import routes from '../routes';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import '../css/navigation.css';
 
 function Navigation() {
+  const history = useHistory();
+
   return (
-    <div className="flex flex-col justify-start items-start py-6 pr-4 shadow-md h-screen overflow-y-scroll">
-      <div className="w-full inline-block text-2xl text-blue-700 px-6 pb-6 tracking-wider font-semibold">Whatevers</div>
+    <div className="flex flex-col justify-start items-start py-6 pr-4 shadow-lg h-screen overflow-y-scroll">
+      <div 
+        onClick={() => {history.push('/')}}
+        className="w-full cursor-pointer inline-block text-2xl text-blue-700 px-6 pb-6 tracking-wider font-semibold"
+      >Whatevers</div>
       {routes.map(route => (
         <NavLink
           to={route.path}

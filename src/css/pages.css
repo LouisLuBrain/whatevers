@@ -1,0 +1,24 @@
+.colorful-text {
+  animation: colorful 15s ease-in-out backwards infinite;
+}
+
+@keyframes colorful {
+  0%{
+    color: #6F6F7B;
+  }
+  20%{
+    color: #F23820;
+  }
+  40%{
+    color: #F8F033;
+  }
+  60%{
+    color: #40D020;
+  }
+  80%{
+    color: #007FFF;
+  }
+  100%{
+    color: #8F20FF;
+  }
+}
